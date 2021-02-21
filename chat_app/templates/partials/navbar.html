@@ -1,0 +1,25 @@
+<nav class="navbar has-background-grey-darker is-transparent" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand ml-5">
+    <a class="navbar-item" href="{% url 'index' %}">
+      <span class="material-icons" style="font-size: 36px; color: rgb(231, 85, 31)">3p</span>
+      <h1 class="title has-text-white ml-3 mb-2" style="font-size: 28px">Chatizy</h1>
+    </a>
+    <a role="button" class="navbar-burger has-text-white" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item has-text-white" href="{% url 'index' %}"> Home </a>
+
+      <a class="navbar-item has-text-white" href="https://github.com/nikholasborges"> GitHub Repo </a>
+    </div>
+
+    <div class="navbar-end mr-5">
+      <h4 class="has-text-white" style="font-size: 13px; margin-top: 18px">made by nikholasborges</h4>
+    </div>
+  </div>
+</nav>

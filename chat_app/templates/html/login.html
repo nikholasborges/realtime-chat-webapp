@@ -1,0 +1,29 @@
+{% extends './base.html' %}
+{% load static %}
+{% block content %}
+<section class="section is-small"></section>
+<section class="section is-medium pt-2">
+  <div class="columns is-vcentered">
+    <div class="column"></div>
+    <div class="column has-text-centered is-3">
+      <div class="container">
+        <div class="box has-background-grey-darker">
+          <span class="material-icons mt-3" style="font-size: 48px; color: rgb(231, 85, 31);">3p</span>
+          <h1 class="title has-text-primary-light mt-5">Bem vindo ao Chatizy</h1>
+          
+          <p class="subtitle has-text-primary-light mt-6 mb-3">Apelido:</p>
+          <p id="invalid-username" class="subtitle is-6 m-1" style="color: rgb(231, 34, 34); display: none;">Nome inválido*</p>
+          <input id="username-input" class="input" placeholder="escolha seu melhor apelido..." style="background-color: rgb(34, 34, 34); border: 0; color: white; width: 325px;"></input>
+          
+          <p class="subtitle has-text-primary-light mt-5 mb-3">Nome da sala:</p>
+          <p id="invalid-roomname" class="subtitle is-6 m-1" style="color: rgb(231, 34, 34); display: none;">Sala inválida*</p>
+          <input id="roomname-input" class="input" placeholder="digite o nome da sala..." style="background-color: rgb(34, 34, 34); border: 0; color: white; width: 325px;"></input>
+
+          <button id="login-button" class="button is-large mt-5 mb-5" onclick="loginHandle()" style="background-color: rgb(231, 85, 31); color: white; border: 0;">entrar</a>
+        </div>
+      </div>
+    </div>
+    <div class="column"></div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="{% static '../static/css/bulma.css'%}" />
+    <link rel="stylesheet" href="{% static '../static/css/loader.css'%}" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="icon" href="{% static '../static/img/chat.png'%}" />
+
+    <title>Chatizy | your chat app</title>
+
+    <style>
+      button,
+      input[type="submit"],
+      input[type="reset"],
+      textarea {
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+        resize: none;
+      }
+    </style>
+  </head>
+  <body style="background-color: rgb(34, 34, 34)">
+    {% include '../partials/navbar.html' %} {% block content %} {% endblock %}
+
+    <!-- pageloader -->
+    <div class="aloader-wrapper">
+      <span class="aloader material-icons"> 3p </span>
+    </div>
+
+    {{ room_name|json_script:"room-name" }}
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="{% static '../static/js/websocket.js'%}"></script>
+    <script src="{% static '../static/js/login.js'%}"></script>
+    <script>
+      // page load
+      $(window).on("load", function () {
+        $(".aloader-wrapper").fadeOut(800);
+      });
+    </script>
+  </body>
+</html>
