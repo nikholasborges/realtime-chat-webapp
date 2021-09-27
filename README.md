@@ -18,7 +18,7 @@ Project created to study Django apps development and implementation
 
 Built with
 
-- ![Python](https://img.shields.io/badge/Python-3.7-yellow)
+- ![Python](https://img.shields.io/badge/Python-v3.9-yellow)
 - ![Standard code style](https://img.shields.io/badge/Code%20Style-standard-orange)
 - ![Django](https://img.shields.io/badge/Django-https%3A%2F%2Fwww.djangoproject.com-yellow)
 - ![Channels](https://img.shields.io/badge/Channels-https%3A%2F%2Fchannels.readthedocs.io%2Fen%2Fstable%2F-orange)
