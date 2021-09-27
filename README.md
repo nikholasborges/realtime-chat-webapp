@@ -2,7 +2,7 @@
 A real-time chat web application made with Django and WebSockets
 
 ## Motivation
-Project created to study Django apps development and implementation
+Project created to study Django apps development and WebSockets implementation
 
 ## Features
 
