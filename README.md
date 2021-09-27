@@ -26,7 +26,8 @@ Built with
 
 ## How to use
 
-1 - Download the Project: 
+1 - Download the Project:
+
 2 - Run the batch file:
 ```
 run_project.bat
