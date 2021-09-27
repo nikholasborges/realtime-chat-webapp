@@ -43,6 +43,19 @@ function loginHandle() {
     window.location.pathname = "/chat/" + roomNameIdDom.value + "/";
 }
 
+function toggleTip() {
+    const tipDom = document.querySelector("#tip");
+
+    let displayValue = tipDom.style.display;
+
+    if (displayValue === 'block') {
+        tipDom.style.display = 'none';
+    }
+    else {
+        tipDom.style.display = 'block';
+    }
+}
+
 document.addEventListener('keydown', (e) => {
     if (e.keyCode === 13) {
         console.log("enter key pressed");

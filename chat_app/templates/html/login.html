@@ -8,18 +8,25 @@
     <div class="column has-text-centered is-3">
       <div class="container">
         <div class="box has-background-grey-darker">
-          <span class="material-icons mt-3" style="font-size: 48px; color: rgb(231, 85, 31);">3p</span>
-          <h1 class="title has-text-primary-light mt-5">Bem vindo ao Chatizy</h1>
+          <span class="material-icons mt-3 icon-style">3p</span>
+          <h1 class="title has-text-primary-light mt-5">Welcome to Chatizy</h1>
           
-          <p class="subtitle has-text-primary-light mt-6 mb-3">Apelido:</p>
-          <p id="invalid-username" class="subtitle is-6 m-1" style="color: rgb(231, 34, 34); display: none;">Nome inválido*</p>
-          <input id="username-input" class="input" placeholder="escolha seu melhor apelido..." style="background-color: rgb(34, 34, 34); border: 0; color: white; width: 325px;"></input>
+          <p class="subtitle has-text-primary-light mt-6 mb-3">Nickname:</p>
+          <p id="invalid-username" class="subtitle is-6 m-1 invalid">Invalid nickname*</p>
+          <input id="username-input" class="input login-input" placeholder="pick your best nickname..."></input>
           
-          <p class="subtitle has-text-primary-light mt-5 mb-3">Nome da sala:</p>
-          <p id="invalid-roomname" class="subtitle is-6 m-1" style="color: rgb(231, 34, 34); display: none;">Sala inválida*</p>
-          <input id="roomname-input" class="input" placeholder="digite o nome da sala..." style="background-color: rgb(34, 34, 34); border: 0; color: white; width: 325px;"></input>
+          <p class="subtitle has-text-primary-light mt-5 mb-3">Room number:</p>
+          <p id="invalid-roomname" class="subtitle is-6 m-1 invalid">Invalid room number*</p>
+          <!-- <input id="roomname-input" class="input login-input" placeholder="choose your room number..."></input> -->
+          <select name="roomname" id="roomname-input" class="input login-input">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
 
-          <button id="login-button" class="button is-large mt-5 mb-5" onclick="loginHandle()" style="background-color: rgb(231, 85, 31); color: white; border: 0;">entrar</a>
+          <button id="login-button" class="button is-large mt-5 mb-5 login-button" onclick="loginHandle()">entrar</a>
         </div>
       </div>
     </div>

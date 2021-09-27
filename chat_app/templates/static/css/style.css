@@ -1,0 +1,117 @@
+button,
+input[type="submit"],
+input[type="reset"],
+textarea {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  resize: none;
+}
+
+body {
+  background-color: rgb(34, 34, 34);
+}
+
+span {
+  font-size: 36px;
+  color: rgb(231, 85, 31);
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 13px;
+  margin-top: 18px;
+}
+
+textarea {
+  color: rgb(151, 151, 151);
+}
+
+a {
+  color: rgb(245, 126, 83);
+}
+
+.icon-style {
+  font-size: 48px;
+  color: rgb(231, 85, 31);
+}
+
+.invalid {
+  color: rgb(231, 34, 34);
+  display: none;
+}
+
+.login-input {
+  background-color: rgb(34, 34, 34);
+  border: 0;
+  color: white;
+  width: 325px;
+}
+.login-button {
+  background-color: rgb(231, 85, 31);
+  color: white;
+  border: 0;
+}
+
+.chat-content {
+  background-color: rgb(34, 34, 34);
+  border: 1;
+  border-color: rgb(231, 85, 31);
+  height: 400px;
+}
+
+.chat-input-content {
+  background-color: rgb(34, 34, 34);
+}
+
+.chat-input-icon {
+  font-size: 26px;
+  color: rgb(231, 85, 31);
+}
+
+.chat-input {
+  background-color: rgb(34, 34, 34);
+  border: 0;
+  color: white;
+  font-size: medium;
+}
+
+#tip {
+  display: block;
+}
+
+.tip-box {
+  width: 300px;
+  margin: 50px auto;
+  background: #555555;
+  padding: 20px;
+  font-weight: 500;
+  color: #fff;
+  position: relative;
+}
+
+.tip-box:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #555555;
+  border-top: 10px solid #555555;
+  border-bottom: 10px solid transparent;
+  left: -19px;
+  top: 6px;
+}
+
+.close-tip {
+  font-size: smaller;
+  margin-top: 15px;
+  margin-left: 35%;
+}

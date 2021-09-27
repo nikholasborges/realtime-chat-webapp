@@ -8,28 +8,13 @@
 
     <link rel="stylesheet" href="{% static '../static/css/bulma.css'%}" />
     <link rel="stylesheet" href="{% static '../static/css/loader.css'%}" />
+    <link rel="stylesheet" href="{% static '../static/css/style.css'%}" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="icon" href="{% static '../static/img/chat.png'%}" />
 
     <title>Chatizy | study of a chat app</title>
-
-    <style>
-      button,
-      input[type="submit"],
-      input[type="reset"],
-      textarea {
-        background: none;
-        color: inherit;
-        border: none;
-        padding: 0;
-        font: inherit;
-        cursor: pointer;
-        outline: inherit;
-        resize: none;
-      }
-    </style>
   </head>
-  <body style="background-color: rgb(34, 34, 34)">
+  <body>
     {% include '../partials/navbar.html' %} {% block content %} {% endblock %}
 
     <!-- pageloader -->

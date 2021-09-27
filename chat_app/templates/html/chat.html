@@ -1,36 +1,44 @@
 {% extends './base.html' %} {% load static %} {% block content %}
-<section class="section is-small"></section>
-<section class="section is-small pt-2">
-  <div class="columns is-vcentered">
-    <div class="column is-hcentered">
-      <!-- first column -->
+<section class="container mb-6"></section>
+<section class="section pt-2">
+  <div class="columns is-hcentered is-vcentered">
+    <div class="column is-hcentered is-3">
+
     </div>
-    <div class="column has-text-centered is-5 is-flex">
+    <div class="column has-text-centered is-flex is-6 is-justify-content-center">
       <!-- middle column -->
-      <div class="container">
+      <div>
         <div class="box has-background-grey-darker">
           <div class="container is-flex is-justify-content-center mb-5 mt-3">
             <!-- title container -->
-            <span class="material-icons" style="font-size: 48px; color: rgb(231, 85, 31)">3p</span>
+            <span class="material-icons mt-2 icon-style">3p</span>
             <h1 class="title has-text-white ml-3">Chatizy</h1>
           </div>
-          <div class="box mb-3" style="background-color: rgb(34, 34, 34); border: 1; border-color: rgb(231, 85, 31); height: 500px">
+          <div class="box mb-3 chat-content">
             <!-- messages box -->
-            <textarea readonly id="chat-log" cols="100" rows="19" style="color: rgb(151, 151, 151);"></textarea>
+            <textarea readonly id="chat-log" cols="100" rows="19"></textarea>
           </div>
-          <div class="box p-2" style="background-color: rgb(34, 34, 34)">
+          <div class="box p-2 chat-input-content">
             <div class="container is-flex is-justify-content-center">
               <!-- send messages box -->
-              <input id="chat-message-input" type="text" class="input is-small is-static ml-3" placeholder="escreva aqui.." style="background-color: rgb(34, 34, 34); border: 0; color: white; font-size: medium" />
-              <button id="chat-message-submit" class="material-icons mr-3 ml-5 mt-2" onclick="{sendMessage()}" style="font-size: 26px; color: rgb(231, 85, 31)">send</span>
-              <button id="chat-message-delete" class="material-icons mr-3 mt-2" onclick="{cleanTextInput()}" style="font-size: 26px; color: rgb(231, 85, 31)">delete_sweep</span>
+              <input id="chat-message-input" type="text" class="input is-small is-static ml-3 chat-input" placeholder="type here.." />
+              <button id="chat-message-submit" class="material-icons mr-3 ml-5 mt-1 chat-input-icon" onclick="{sendMessage()}">send</span>
+              <button id="chat-message-delete" class="material-icons mr-3 mt-1 chat-input-icon" onclick="{cleanTextInput()}">delete_sweep</span>
             </div>
           </div>
         </div>
       </div>
+       <!-- end of middle column -->
     </div>
-    <div class="column">
-      <!-- last column -->
+    <div class="column is-flex is-flex-direction-column is-3">
+      <div class="tip-box ml-4" id="tip">
+        <p>
+          To try the real-time chat (WebSocket) functionality, 
+          open the project in a new incognito tab or in a new browser,
+          open the <a href="http://127.0.0.1:8080/">localhost</a>  link, and login into the same room!
+        </p>
+        <button class="button login-button close-tip" onclick="toggleTip()">close tip</button>
+      </div>
     </div>
   </div>
 </section>
