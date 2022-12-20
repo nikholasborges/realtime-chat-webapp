@@ -1,4 +1,4 @@
-## realtime-chat-webapp
+## Project: realtime-chat-webapp
 A real-time chat web application made with Django and WebSockets
 
 ## Motivation
